@@ -1,0 +1,110 @@
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 85%;
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+  text-align: center;
+  border-bottom: 2px solid #e5e5e5;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  font-size: 2.8em;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+header p {
+  color: #555;
+  font-size: 0.95em;
+}
+
+header a {
+  color: #0073b1; /* LinkedIn blue vibe */
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s;
+}
+
+header a:hover {
+  color: #005582;
+  text-decoration: underline;
+}
+
+/* Sections */
+section {
+  margin-bottom: 30px;
+}
+
+section h2 {
+  font-size: 1.5em;
+  color: #444;
+  border-left: 5px solid #0073b1;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+/* Job & Education */
+.job,
+.edu {
+  margin-bottom: 18px;
+}
+
+.job h3,
+.edu h3 {
+  font-size: 1.2em;
+  color: #222;
+}
+
+.job p,
+.edu p {
+  font-size: 0.95em;
+  color: #555;
+  margin: 3px 0 8px 0;
+}
+
+/* Lists */
+ul {
+  margin: 5px 0 15px 20px;
+}
+
+ul li {
+  margin-bottom: 6px;
+}
+
+/* Skills section */
+section:last-child ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 8px 15px;
+}
+
+section:last-child li {
+  background: #f0f4f8;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.95em;
+}
